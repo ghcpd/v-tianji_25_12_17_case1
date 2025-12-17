@@ -1,0 +1,60 @@
+.app {
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.app-header {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h1 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.8rem;
+}
+
+.settings-button {
+  padding: 10px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.settings-button:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 16px;
+  }
+
+  .header-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .settings-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
