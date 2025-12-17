@@ -1,0 +1,167 @@
+.bookshelf {
+  padding: 20px;
+}
+
+.bookshelf h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+}
+
+.empty p {
+  margin: 10px 0;
+}
+
+.hint {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.bookList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bookItem {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.coverSmall {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.bookInfo {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bookInfo h4 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+}
+
+.author {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin: 0 0 10px 0;
+}
+
+.progressSmall {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.progressBarSmall {
+  flex: 1;
+  height: 6px;
+  background: var(--progress-bg);
+  border-radius: 3px;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.progressFillSmall {
+  height: 100%;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.progressLabel {
+  color: var(--text-secondary);
+  min-width: 35px;
+  text-align: right;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.statusSelect {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.removeBtn,
+.readBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+
+.removeBtn {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+.removeBtn:hover {
+  background: var(--error);
+  color: white;
+}
+
+.readBtn {
+  background: var(--primary);
+  color: white;
+}
+
+.readBtn:hover {
+  background: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+  .bookItem {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .progressSmall {
+    justify-content: center;
+  }
+
+  .statusSelect,
+  .removeBtn,
+  .readBtn {
+    flex: 1;
+    min-width: 80px;
+  }
+}

@@ -1,0 +1,221 @@
+.reader {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.closeBtn {
+  background: var(--secondary);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.closeBtn:hover {
+  background: var(--secondary-hover);
+}
+
+.header h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: var(--progress-bg);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.content {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.chapterNav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.navBtn {
+  padding: 8px 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.navBtn:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.navBtn:disabled {
+  background: var(--disabled);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.chapterList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.chapterList label {
+  font-weight: 500;
+}
+
+.chapterSelect {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.chapterInfo {
+  font-size: 14px;
+  color: var(--text-secondary);
+  min-width: 60px;
+  text-align: center;
+}
+
+.chapterContent {
+  margin: 20px 0;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.chapterContent h2 {
+  margin-bottom: 15px;
+}
+
+.chapterContent p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.chapterActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+}
+
+.actionBtn {
+  padding: 10px 16px;
+  background: var(--secondary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.actionBtn:hover {
+  background: var(--secondary-hover);
+}
+
+.actionBtn.bookmarked {
+  background: var(--primary);
+  color: white;
+}
+
+.bookmarks {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.bookmarks h3 {
+  margin-bottom: 15px;
+}
+
+.noBookmarks {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.bookmarks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookmarkItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: var(--secondary);
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.bookmarkChapter {
+  font-weight: bold;
+  color: var(--primary);
+  min-width: 60px;
+}
+
+.bookmarkQuote {
+  flex: 1;
+  color: var(--text);
+}
+
+.removeBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.removeBtn:hover {
+  color: var(--error);
+}
+
+.error {
+  color: var(--error);
+  padding: 20px;
+  text-align: center;
+}
