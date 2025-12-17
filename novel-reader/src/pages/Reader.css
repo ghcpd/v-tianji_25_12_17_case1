@@ -1,0 +1,28 @@
+/* Reader page styles */
+.reader {
+  padding: 1rem;
+}
+
+.reader .progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reader .content {
+  margin: 1rem 0;
+}
+
+.reader .navButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.reader .bookmarks {
+  margin-top: 1rem;
+}
+
+.reader.dark {
+  background: #222;
+  color: #fff;
+}

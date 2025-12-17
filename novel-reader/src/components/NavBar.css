@@ -1,0 +1,14 @@
+/* Navbar styles */
+.navbar {
+  padding: 0.5rem;
+  background: #f0f0f0;
+}
+
+.navbar.dark {
+  background: #333;
+  color: #fff;
+}
+
+.navbar a {
+  margin-right: 1rem;
+}

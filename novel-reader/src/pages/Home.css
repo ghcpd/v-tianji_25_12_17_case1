@@ -1,0 +1,17 @@
+/* Basic styles for Home */
+.home {
+  padding: 1rem;
+}
+
+.home ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home li {
+  margin-bottom: 0.5rem;
+}
+
+.home button {
+  margin-left: 1rem;
+}
