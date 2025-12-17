@@ -1,0 +1,310 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  gap: 16px;
+}
+
+.novelInfo {
+  flex: 1;
+  text-align: center;
+}
+
+.novelInfo h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.novelInfo span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.toolButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.toolButton {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.toolButton:hover {
+  background: var(--bg-secondary);
+  border-color: var(--primary-color);
+}
+
+.progressBar {
+  height: 4px;
+  background: var(--bg-secondary);
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--primary-color);
+  transition: width 0.3s;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 320px;
+  background: var(--card-bg);
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.sidebar h3 {
+  margin: 0 0 16px 0;
+  color: var(--text-primary);
+}
+
+.chapterList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chapterItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+}
+
+.chapterItem:hover {
+  background: var(--bg-secondary);
+  border-color: var(--primary-color);
+}
+
+.chapterItem.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.chapterNumber {
+  font-weight: 700;
+  font-size: 0.9rem;
+  min-width: 32px;
+}
+
+.chapterTitle {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.bookmarkForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.bookmarkInput {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.bookmarkInput:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.addBookmarkButton {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.addBookmarkButton:hover {
+  opacity: 0.9;
+}
+
+.bookmarkList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bookmarkItem {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.bookmarkInfo {
+  flex: 1;
+}
+
+.bookmarkInfo strong {
+  display: block;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.bookmarkInfo p {
+  margin: 4px 0;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.bookmarkInfo small {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.bookmarkActions {
+  display: flex;
+  gap: 4px;
+}
+
+.bookmarkAction {
+  padding: 4px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.bookmarkAction:hover {
+  background: var(--bg-secondary);
+  border-color: var(--primary-color);
+}
+
+.emptyBookmarks {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 24px;
+  font-style: italic;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 48px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content h1 {
+  color: var(--text-primary);
+  margin: 0 0 32px 0;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.chapterContent {
+  color: var(--text-primary);
+  line-height: 1.8;
+}
+
+.chapterContent p {
+  margin: 0 0 1.5em 0;
+  text-align: justify;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.navButton {
+  padding: 12px 24px;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navButton:hover:not(:disabled) {
+  background: var(--primary-color);
+  color: white;
+}
+
+.navButton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 280px;
+    padding: 16px;
+  }
+
+  .content {
+    padding: 24px 16px;
+  }
+
+  .toolbar {
+    flex-wrap: wrap;
+  }
+
+  .novelInfo {
+    order: -1;
+    width: 100%;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+}
