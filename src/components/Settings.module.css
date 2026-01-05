@@ -1,0 +1,145 @@
+.settings {
+  padding: 20px;
+  max-width: 600px;
+}
+
+.settings h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.themeControl {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.themeControl p {
+  margin-bottom: 12px;
+}
+
+.fontControl {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.btnSmall {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btnSmall:hover {
+  background: var(--primary-hover);
+}
+
+.fontDisplay {
+  text-align: center;
+  flex: 1;
+}
+
+.fontPreview {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.fontLabel {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin: 0;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--progress-bg);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary);
+  cursor: pointer;
+  border: none;
+}
+
+.btn {
+  padding: 10px 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.about {
+  background: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.about p {
+  margin-bottom: 10px;
+}
+
+.features {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border);
+}
+
+.features p {
+  margin-bottom: 8px;
+}
+
+.features ul {
+  list-style-position: inside;
+  color: var(--text-secondary);
+}
+
+.features li {
+  margin-bottom: 6px;
+}
